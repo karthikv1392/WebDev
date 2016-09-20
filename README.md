@@ -1,4 +1,4 @@
-# An Acceleo tool to convert model to webpage using Acceleo
+# A Sample tool to convert model to webpage using Acceleo
 
 1) Import the Acceleo project onto the workspace by ensuring that the perspective of workspace is set to "Acceleo".
    ps : Please maintain the folder hierarchy
