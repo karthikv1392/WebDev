@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/DDA/src"
+    modelPluginID="DDA" modelName="DDA" importerID="org.eclipse.emf.importer.ecore"
+    complianceLevel="6.0" copyrightFields="false">
+  <foreignModel>DDA.ecore</foreignModel>
+  <genPackages prefix="WebApp" disposableProviderFactory="true" ecorePackage="DDA.ecore#/">
+    <genClasses ecoreClass="DDA.ecore#//Pages">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference DDA.ecore#//Pages/action"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference DDA.ecore#//Pages/views"/>
+    </genClasses>
+    <genClasses ecoreClass="DDA.ecore#//Views">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference DDA.ecore#//Views/tables"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference DDA.ecore#//Views/forms"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference DDA.ecore#//Views/has"/>
+    </genClasses>
+    <genClasses ecoreClass="DDA.ecore#//Forms">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference DDA.ecore#//Forms/formelements"/>
+    </genClasses>
+    <genClasses ecoreClass="DDA.ecore#//FormElements"/>
+    <genClasses ecoreClass="DDA.ecore#//Controller">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference DDA.ecore#//Controller/action"/>
+    </genClasses>
+    <genClasses ecoreClass="DDA.ecore#//Action">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference DDA.ecore#//Action/actionmapping"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference DDA.ecore#//Action/entities"/>
+    </genClasses>
+    <genClasses ecoreClass="DDA.ecore#//ActionMapping">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference DDA.ecore#//ActionMapping/Controller"/>
+    </genClasses>
+    <genClasses ecoreClass="DDA.ecore#//Entities">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference DDA.ecore#//Entities/views"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference DDA.ecore#//Entities/has"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference DDA.ecore#//Entities/values"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference DDA.ecore#//Entities/attribute"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="DDA.ecore#//NamedElement">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DDA.ecore#//NamedElement/Name"/>
+    </genClasses>
+    <genClasses ecoreClass="DDA.ecore#//Tables">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference DDA.ecore#//Tables/contain"/>
+    </genClasses>
+    <genClasses ecoreClass="DDA.ecore#//styleElements"/>
+    <genClasses ecoreClass="DDA.ecore#//DynamicApplication">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference DDA.ecore#//DynamicApplication/pages"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference DDA.ecore#//DynamicApplication/entities"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="DDA.ecore#//IdElement">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DDA.ecore#//IdElement/Id"/>
+    </genClasses>
+    <genClasses ecoreClass="DDA.ecore#//Dummies">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference DDA.ecore#//Dummies/attribute"/>
+    </genClasses>
+    <genClasses ecoreClass="DDA.ecore#//Attribute">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute DDA.ecore#//Attribute/value"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

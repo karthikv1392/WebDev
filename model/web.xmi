@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebApp:DynamicApplication xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:WebApp="http://univaq.it/webapp" Name="My Course - A Course Management Application">
+  <pages Name="Main Page">
+    <views Name="Course View" Id="cid"/>
+    <views Name="Instructor View" Id="iid"/>
+    <views Name="Students View" Id="eid"/>
+  </pages>
+  <entities Name="Courses" views="//@pages.0/@views.0">
+    <has Name="Instructor">
+      <values Name="Instructor 1">
+        <attribute Name="Instructor Name" value="Vittorio Cortellesa"/>
+        <attribute Name="University" value="University of L'Aquia"/>
+        <attribute Name="Email" value="vittorio.cortellesa@univa.it"/>
+        <attribute Name="Website" value="www.univaq.it/Vittorio"/>
+        <attribute Name="Areas of Interest" value="Performance Engineering, Software Quality Engineering"/>
+      </values>
+      <values Name="Instructor 2">
+        <attribute Name="Instructor Name" value="Henry Muccini"/>
+        <attribute Name="University" value="University of L'Aquia"/>
+        <attribute Name="Email" value="henry.muccini@univaq.it"/>
+        <attribute Name="Website" value="www.henrymuccini.com"/>
+        <attribute Name="Areas of Interest" value="Software Architecture, Cyber Physical Systems"/>
+      </values>
+      <values Name="Instructor 3">
+        <attribute Name="Instructor Name" value="Ludovico Iovino"/>
+        <attribute Name="University" value="University of L'Aquia"/>
+        <attribute Name="Email" value="ludovico.iovino@gssi.infn.it"/>
+        <attribute Name="Website" value="www.ludovicoiovino.com/"/>
+        <attribute Name="Areas of Interest" value="Model Driven Engineering, Web Development"/>
+      </values>
+      <attribute Name="Instructor Name"/>
+      <attribute Name="University"/>
+      <attribute Name="Email"/>
+      <attribute Name="website"/>
+      <attribute Name="Areas of Interest"/>
+    </has>
+    <has Name="Students">
+      <values Name="Student 1">
+        <attribute Name="Name" value="Karthik"/>
+        <attribute Name="Email" value="karthikv1392@gmail.com"/>
+        <attribute Name="Date_Of_Birth" value="13-10-1992"/>
+        <attribute Name="Country" value="India"/>
+        <attribute Name="Gender" value="Male"/>
+        <attribute Name="Phone" value="+393319452405"/>
+      </values>
+       <values Name="Student 2">
+        <attribute Name="Name" value="Tala"/>
+        <attribute Name="Email" value="geminitoti@gmail.com"/>
+        <attribute Name="Date_Of_Birth" value="17-06-1990"/>
+        <attribute Name="Country" value="Syria"/>
+        <attribute Name="Gender" value="Female"/>
+        <attribute Name="Phone" value="+393319867496"/>
+      </values>
+         <values Name="Student 3">
+        <attribute Name="Name" value="Sreelakshmi"/>
+        <attribute Name="Email" value="sreelakshmir1994@gmail.com"/>
+        <attribute Name="Date_Of_Birth" value="05-05-1994"/>
+        <attribute Name="Country" value="India"/>
+        <attribute Name="Gender" value="Female"/>
+        <attribute Name="Phone" value="+919446276456"/>
+      </values>
+      <attribute Name="Name" value=""/>
+      <attribute Name="Email"/>
+      <attribute Name="DOB"/>
+      <attribute Name="Country"/>
+      <attribute Name="Gender"/>
+      <attribute Name="Phone"/>
+    </has>
+    <values Name="Course 1">
+      <attribute Name="Course Duration" value="4 months"/>
+      <attribute Name="Course Name" value="Model Driven Engineering"/>
+      <attribute Name="University" value="GSSI"/>
+      <attribute Name="Instructor Name" value="Ludovico Iovino"/>
+      <attribute Name="Course Language" value="English"/>
+      <attribute Name="Start Date" value="25-03-2016"/>
+    </values>
+    <values Name="Course 2">
+      <attribute Name="Course Duration" value="4 months"/>
+      <attribute Name="Course Name" value="Software Architecture"/>
+      <attribute Name="University" value="University of L'Aquila"/>
+      <attribute Name="Instructor Name" value="Henry Muccini"/>
+      <attribute Name="Course Language" value="English"/>
+      <attribute Name="Course Start Date" value="26-6-2016"/>
+    </values>
+    <values Name="Course 3">
+      <attribute Name="Course Duration" value="5 months"/>
+      <attribute Name="Course Name" value="Software Quality Engineering"/>
+      <attribute Name="University" value="University of L'Aquila"/>
+      <attribute Name="Instructor Name" value="Vittorio Cortellesa"/>
+      <attribute Name="Course Language" value="English"/>
+      <attribute Name="Course Start Date" value="28-09-2016"/>
+    </values>
+    <attribute Name="Course Duration"/>
+    <attribute Name="Course Name"/>
+    <attribute Name="University" value=""/>
+    <attribute Name="Instructor Name"/>
+    <attribute Name="Course Language"/>
+    <attribute Name="Start Date"/>
+  </entities>
+</WebApp:DynamicApplication>
